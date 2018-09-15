@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     {{ title }}!
   </h1>
@@ -17,4 +17,38 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
-<button mat-button>Basic</button>
+<button mat-button >Basic</button>
+<mat-nav-list>
+  
+  <mat-list>
+    <mat-list-item> Pepper </mat-list-item>
+    <mat-list-item> Salt </mat-list-item>
+    <mat-list-item> Paprika </mat-list-item>
+   </mat-list>
+</mat-nav-list> -->
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <a mat-stroked-button [routerLink]="'/app-rest'">App rest</a>
+      <a mat-stroked-button [routerLink]="'/app-heroes'">App heroes</a>
+    </mat-grid-list>
+
+    <!-- <a mat-stroked-button [routerLink]="'/app-rest'">App rest</a>
+
+    <a mat-stroked-button [routerLink]="'/app-heroes'">App heroes</a> -->
+
+  </mat-toolbar-row>
+
+  <!-- <mat-toolbar-row>
+    <a mat-stroked-button [routerLink]="'/app-heroes'">App heroes</a>
+  </mat-toolbar-row> -->
+
+</mat-toolbar>
+
+<!-- <a [routerLink]="'/app-rest'"> App rest </a>
+<a [routerLink]="'/app-heroes'"> App heroes </a> -->
+
+<div>
+  <router-outlet></router-outlet>
+</div>
