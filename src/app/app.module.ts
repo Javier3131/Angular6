@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
+import 'hammerjs';
+
 // import { RouterModule, Routes, Router } from '@angular/router';
 
 // Animaciones
